@@ -1,0 +1,29 @@
+.infoCard {
+  width: 25vw;
+  height: 30vw;
+  margin-left: 1em;
+  margin-right: 1em;
+  border: solid 1px black;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.infoCard img {
+  margin-top: 1em;
+
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.infoCard p {
+  font-family: "Nunito Sans", serif;
+  font-size: 1.1rem;
+  width: 90%;
+}

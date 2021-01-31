@@ -1,0 +1,8 @@
+.backArrow {
+  width: 2em;
+  margin-left: 0.5em;
+}
+
+.backArrow:hover {
+  transform: scale(1.1);
+}

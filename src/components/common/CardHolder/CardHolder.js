@@ -6,10 +6,10 @@ function CardHolder() {
   return (
     <div>
       <div className={style.cardHolder}>
-        <Card color={"blue"} day={"1"} url={"Jour1"} />
-        <Card color={"white"} day={"2"} url={"Jour2"} />
-        <Card color={"white"} day={"3"} url={"Jour3"} />
-        <Card color={"blue"} day={"4"} url={"Jour4"} />
+        <Card color={"blue"} day={"1"} url={"/Jour/1"} />
+        <Card color={"white"} day={"2"} url={"/Jour/2"} />
+        <Card color={"white"} day={"3"} url={"/Jour/3"} />
+        <Card color={"blue"} day={"4"} url={"/Jour/4"} />
       </div>
     </div>
   );
