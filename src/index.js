@@ -12,6 +12,8 @@ import Header from "./components/common/Header";
 import PageBody from "./components/common/PageBody";
 import CardHolder from "./components/common/CardHolder";
 import SwitchButton from "./components/common/SwitchButton";
+import LinkButton from "./components/common/LinkButton";
+import Sources from "./components/common/Sources";
 
 import DayOne from "./components/common/Days/DayOne";
 import DayTwo from "./components/common/Days/DayTwo";
@@ -38,6 +40,7 @@ function App() {
             <div className={"buttonHolder"}>
               <SwitchButton isDaysOn={true} />
             </div>
+            <LinkButton />
           </Route>
           <Route exact path="/Cartes">
             <Header content={"Nous allons aller au Québec!"} />
@@ -47,6 +50,7 @@ function App() {
             <div className={"buttonHolder"}>
               <SwitchButton isDaysOn={false} />
             </div>
+            <LinkButton />
           </Route>
           <Route path="/Jour/1">
             <DayOne />
@@ -71,6 +75,9 @@ function App() {
           </Route>
           <Route path="/Carte/4">
             <MapFour />
+          </Route>
+          <Route path="/Sources">
+            <Sources />
           </Route>
         </Switch>
       </div>
