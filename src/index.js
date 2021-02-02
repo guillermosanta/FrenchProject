@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import "./styles.css";
 import {
@@ -11,14 +11,21 @@ import {
 import Header from "./components/common/Header";
 import PageBody from "./components/common/PageBody";
 import CardHolder from "./components/common/CardHolder";
-import Footer from "./components/common/Footer";
+import SwitchButton from "./components/common/SwitchButton";
 
 import DayOne from "./components/common/Days/DayOne";
 import DayTwo from "./components/common/Days/DayTwo";
 import DayThree from "./components/common/Days/DayThree";
 import DayFour from "./components/common/Days/DayFour";
 
+import MapOne from "./components/common/Maps/MapOne";
+import MapTwo from "./components/common/Maps/MapTwo";
+import MapThree from "./components/common/Maps/MapThree";
+import MapFour from "./components/common/Maps/MapFour";
+
 function App() {
+  const [isDaysOn, setIsDaysOn] = useState(true);
+
   return (
     <Router>
       <div className="App">
@@ -26,9 +33,20 @@ function App() {
           <Route exact path="/">
             <Header content={"Nous allons aller au Québec!"} />
             <PageBody>
-              <CardHolder />
+              <CardHolder isDaysOn={true} />
             </PageBody>
-            <Footer />
+            <div className={"buttonHolder"}>
+              <SwitchButton isDaysOn={true} />
+            </div>
+          </Route>
+          <Route exact path="/Cartes">
+            <Header content={"Nous allons aller au Québec!"} />
+            <PageBody>
+              <CardHolder isDaysOn={false} />
+            </PageBody>
+            <div className={"buttonHolder"}>
+              <SwitchButton isDaysOn={false} />
+            </div>
           </Route>
           <Route path="/Jour/1">
             <DayOne />
@@ -41,6 +59,18 @@ function App() {
           </Route>
           <Route path="/Jour/4">
             <DayFour />
+          </Route>
+          <Route path="/Carte/1">
+            <MapOne />
+          </Route>
+          <Route path="/Carte/2">
+            <MapTwo />
+          </Route>
+          <Route path="/Carte/3">
+            <MapThree />
+          </Route>
+          <Route path="/Carte/4">
+            <MapFour />
           </Route>
         </Switch>
       </div>

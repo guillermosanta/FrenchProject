@@ -6,7 +6,10 @@ function Card(props) {
   return (
     <Link to={props.url}>
       <div className={style.card} style={{ backgroundColor: props.color }}>
-        <h2 className={style.cardText}> Jour {props.day} </h2>
+        <h2 className={style.cardText}>
+          {" "}
+          {props.isDaysOn ? "Jour" : "Carte"} {props.day}{" "}
+        </h2>
         <p> </p>
       </div>
     </Link>

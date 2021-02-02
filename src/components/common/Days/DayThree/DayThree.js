@@ -1,5 +1,5 @@
 import React from "react";
-import BackArrow from "./../BackArrow";
+import BackArrow from "./../../BackArrow";
 import Header from "./../../Header";
 
 function DayThree() {

@@ -1,0 +1,15 @@
+.button {
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  margin-top: 2em;
+}
+
+.button h3 {
+  border: solid 1px blue;
+  border-radius: 3px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: "Nunito Sans", serif;
+  font-weight: lighter;
+}
