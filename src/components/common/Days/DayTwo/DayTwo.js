@@ -5,7 +5,7 @@ import style from "./DayTwo.module.css";
 
 import MuséeImage from "./../../../../images/Musée-des-civilisations.png";
 import BistroSousLeFortImage from "./../../../../images/Bistro-Sous-Le-Fort.png";
-import CôtesÀCôtesImage from "./../../../../images/Côtes-à-Côtes.png";
+import MontmorencyFalls from "./../../../../images/Montmorency-Falls.png";
 
 import InfoCard from "./../../InfoCard";
 import InsideSwitchButton from "./../../InsideSwitchButton";
@@ -31,10 +31,10 @@ function DayTwo() {
           }
         />
         <InfoCard
-          image={CôtesÀCôtesImage}
+          image={MontmorencyFalls}
           alt={"CôtesÀCôtesImage"}
           text={
-            "Nous allons dîner dans les Côtes-à-Côtes Resto. C’est un restaurant près de la rue Petit-Champlain. La nourriture est coûteuse!  Nous allons visiter les chefs!"
+            "Nous allons visiter les Chutes-Montmorency. Les Chutes-Montmorency sont plus grandes que les chutes du Niagara. Nous allons écouter l’eau. Nous allons peut-être danser avec la nature."
           }
         />
       </div>
